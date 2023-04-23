@@ -1,0 +1,227 @@
+*{margin:0; padding:0;}
+li {list-style: none;}
+a {text-decoration: none; color: rgb(29, 29, 29);}
+div, header, section, footer, li { 
+    box-sizing: border-box;
+}
+img {width: 100%;}
+body {
+    background-color: rgb(237, 237, 237);
+}
+
+.wrap {
+    width: 1200px; 
+    margin: 0 auto;
+}
+
+header {
+    width:100%; 
+    height: 130px;
+    margin-bottom: 0;
+    position:relative;
+}
+
+header .logo {
+    margin:0 auto;
+    margin-top: 50px;
+    width:250px;
+}
+
+header nav {
+    float: left;
+    margin-top: 30px;
+    position:absolute; 
+    left:50%;
+    transform:translateX(-50%);
+}
+
+header nav ul li {
+    float: left;
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: 350;
+}
+
+header nav ul li:first-child {
+    margin-left: 0;
+}
+
+header > nav > ul > li:hover a {
+    color:#ababab;
+}
+
+header .top_menu {
+    float:right;
+    margin-top: 36px;
+}
+
+header .top_menu ul li {
+    float: right;
+    margin-right: 50px;
+    font-size: 15px;
+    font-weight: 350;
+}
+
+header .top_menu ul li:first-child {
+    margin-right: 0;
+    /* cart옆에 공백이 안없어지는 이유가 궁금합니다 ㅠㅠ */
+}
+
+header > .top_menu > ul > li:hover >a {
+    color:#ababab;
+}
+
+section i {
+    clear: both;
+    text-align: left;
+    font-weight: 540;
+    font-size: 30px;
+    color:#4a4a4a;
+    display: block;
+}
+
+section i:last-child{
+    padding-top: 40px;
+}
+
+section .banner {
+    width:100%;
+    margin-top: 35px;
+}
+
+section .banner ul li {
+    width:380px;
+    margin-right:18px;
+    float:left;
+}
+
+section .banner ul li .box {
+    padding-bottom: 18px;
+}
+
+section .banner ul li:last-child {
+    margin-right: 0;
+}
+
+section .banner ul li .box .photo {
+    position:relative;
+    overflow: hidden;
+}
+
+section .banner ul li .box .photo .info {
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-color: #e6e6e6;
+    transition:top 0.5s;
+    padding-top: 170px;
+    text-align: center;
+    opacity: 0.9;
+}
+
+section .banner ul li .box .photo:hover .info {
+    top:0;
+}
+
+section .banner2 {
+    width:70%;
+    float: left;
+    margin-top: 25px;
+    display:flex
+}
+
+section .banner2 .photo {
+    position:relative;
+    overflow: hidden;
+    flex: 1;
+}
+
+section .banner2 .photo .info {
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-color: #e6e6e6;
+    transition:top 0.5s;
+    padding-top: 5px;
+    text-align: center;
+    opacity: 0.9;
+}
+
+section .banner2 .photo .info2 {
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-color: #e6e6e6;
+    transition:top 0.5s;
+    padding-top: 20px;
+    text-align: center;
+    opacity: 0.9;
+}
+
+section .banner2 .photo:hover .info {
+    top:0;
+}
+
+section .banner2 .photo:hover .info2 {
+    top:0;
+}
+
+footer {
+    clear:both;
+    width: 100%;
+}
+
+footer > div {
+    float:left;
+    margin: 40px 0 40px 0;
+}
+
+footer .custom {
+    width: 65%;
+    text-align: right;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    margin-right: 50px;
+    padding-top: 30px;
+    border-top: solid #d4d4d4;
+    border-width: 1px;
+}
+
+footer .custom p a {
+    color: rgb(2, 118, 251);
+}
+
+footer .custom p a:hover {
+    color: rgb(79, 161, 255);
+}
+
+footer .footer_menu {
+    width: 30%;
+    border-top: solid #d4d4d4;
+    border-width: 1px;
+    padding-top: 30px;
+}
+
+footer .footer_menu .icon{
+    width: 20px;
+    float: left;
+    margin: 0 10px 25px 10px;
+}
+
+footer .footer_menu .text {
+    margin: 50px 0 0 10px;
+    font-size: 15px;
+    font-weight: 520;
+    line-height: 26px;
+}
+
+footer .footer_menu .text .text1 {
+    text-decoration: underline;
+    color: rgb(0, 31, 66);
+}
+
+footer .footer_menu .text .text2 {
+    text-decoration: underline;
+    color: rgb(2, 118, 251);
+}
